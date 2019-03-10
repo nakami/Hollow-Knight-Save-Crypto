@@ -24,7 +24,7 @@ Shown here is the usage by running the Python script. Using the bundled Windows 
 
 ## Decrypting
 
-- `-i FILE_PATH` or `--input FILE_PATH`: path to a hollow knight save file
+- `-i FILE_PATH` or `--input FILE_PATH`: (required) path to a hollow knight save file
 - `-o FILE_PATH` or `--output FILE_PATH`: path for a resulting json-formatted text file
 - `-v` or `--verbose`: verbose output (outputs some details in the commandline)
 
@@ -34,15 +34,14 @@ usage: hollow_knight_save_crypto.py decrypt [-h] -i INPUT [-o OUTPUT] [-v]
 
 optional arguments:
   -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        file to output the content of the hollow knight save
+                        file
   -v, --verbose         verbose output
 
 required named arguments:
   -i INPUT, --input INPUT
                         hollow knight save file (.dat) to decrypt
-  -o OUTPUT, --output OUTPUT
-                        file to output the content of the hollow knight save
-                        file
-PS D:\workspace\hollow_knight
 ```
 
 example:
@@ -59,23 +58,23 @@ done
 
 ## Encrypting
 
-- `-i FILE_PATH` or `--input FILE_PATH`: path to resulting json-formatted text file
+- `-i FILE_PATH` or `--input FILE_PATH`: (required) path to resulting json-formatted text file
 - `-o FILE_PATH` or `--output FILE_PATH`: path for a resulting hollow knight save file
 - `-v` or `--verbose`: verbose output (outputs some details in the commandline)
 
 ```console
 > python .\hollow_knight_save_crypto.py encrypt -h
-usage: hollow_knight_save_crypto.py encrypt [-h] -i INPUT -o OUTPUT [-v]
+usage: hollow_knight_save_crypto.py encrypt [-h] -i INPUT [-o OUTPUT] [-v]
 
 optional arguments:
   -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        file to output hollow knight save data
   -v, --verbose         verbose output
 
 required named arguments:
   -i INPUT, --input INPUT
                         hollow knight save file in json-format (.json)
-  -o OUTPUT, --output OUTPUT
-                        file to output hollow knight save data
 ```
 
 example:
