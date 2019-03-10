@@ -29,17 +29,20 @@ Shown here is the usage by running the Python script. Using the bundled Windows 
 - `-v` or `--verbose`: verbose output (outputs some details in the commandline)
 
 ```console
-> python .\hollow_knight_save_crypto.py decrypt --help
+> python .\hollow_knight_save_crypto.py decrypt -h
 usage: hollow_knight_save_crypto.py decrypt [-h] -i INPUT [-o OUTPUT] [-v]
 
 optional arguments:
   -h, --help            show this help message and exit
+  -v, --verbose         verbose output
+
+required named arguments:
   -i INPUT, --input INPUT
                         hollow knight save file (.dat) to decrypt
   -o OUTPUT, --output OUTPUT
                         file to output the content of the hollow knight save
                         file
-  -v, --verbose         verbose output
+PS D:\workspace\hollow_knight
 ```
 
 example:
@@ -61,16 +64,18 @@ done
 - `-v` or `--verbose`: verbose output (outputs some details in the commandline)
 
 ```console
-> python .\hollow_knight_save_crypto.py encrypt --help
+> python .\hollow_knight_save_crypto.py encrypt -h
 usage: hollow_knight_save_crypto.py encrypt [-h] -i INPUT -o OUTPUT [-v]
 
 optional arguments:
   -h, --help            show this help message and exit
+  -v, --verbose         verbose output
+
+required named arguments:
   -i INPUT, --input INPUT
                         hollow knight save file in json-format (.json)
   -o OUTPUT, --output OUTPUT
                         file to output hollow knight save data
-  -v, --verbose         verbose output
 ```
 
 example:
