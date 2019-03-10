@@ -1,8 +1,13 @@
 # Hollow-Knight-Save-Crypto
 
-A CLI decrypt and encrypt utility for Hollow Knight save files written in Python 3. A bundled executable for Windows can be found here: https://github.com/nakami/Hollow-Knight-Save-Crypto/releases
+A CLI (commandline-interface) decrypt and encrypt utility for Hollow Knight save files written in Python 3. The basic usage contains two modes:
 
-Inspired to:
+- `decrypt`: decrypt a hollow knight save file and save the resulting data in a json-formatted text file
+- `encrypt`: encrypt a json-formatted save file and save the result as a hollow knight save file
+
+A bundled executable for Windows can be downloaded in `releases`: https://github.com/nakami/Hollow-Knight-Save-Crypto/releases
+
+Inspired by:
 
 - Hollow-Knight-SaveManager by KayDeeTee: https://github.com/KayDeeTee/Hollow-Knight-SaveManager/
 - hollow by bloodorca: https://github.com/bloodorca/hollow
@@ -10,7 +15,8 @@ Inspired to:
 # Requirements
 
 If you want to run the script as a bundled Windows executable, you do not need to install anything.
-If you want to run the Python script via Python you need the following package to be installed:
+
+If you want to run the Python script via Python you need to install the following package:
 
 ```
 pycryptodome
